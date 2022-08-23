@@ -1,6 +1,6 @@
 import { defineConfig } from 'tsup';
 import babel from 'esbuild-plugin-babel';
-import glsl from 'esbuild-plugin-glsl'
+import glsl from 'esbuild-plugin-glsl';
 // https://tsup.egoist.sh/
 // https://esbuild.github.io/
 

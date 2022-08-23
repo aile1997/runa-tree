@@ -1,5 +1,5 @@
-import { DefineComponent, defineComponent,ref, onMounted} from 'vue';
-import { noisyLinesBackground } from '../../../dist/esm/index'
+import { DefineComponent, defineComponent, ref, onMounted } from 'vue';
+// import { noisyLinesBackground } from '../../../dist/esm/index'
 
 export interface Props {
   count?: number;
@@ -19,14 +19,12 @@ export const JsxDemo = defineComponent({
     },
   },
   setup(props: Props) {
-    const root = ref()
+    const root = ref();
     onMounted(() => {
-        noisyLinesBackground({
-          el: root.value
-        })
-    })
-    return () => (
-      <div ref={root}>count in jsx component: {props.count}</div>
-    );
+      // noisyLinesBackground({
+      //   el: root.value
+      // })
+    });
+    return () => <div ref={root}>count in jsx component: {props.count}</div>;
   },
 }) as DefineComponent<Props>;
