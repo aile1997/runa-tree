@@ -18,13 +18,18 @@ export const JsxDemo = defineComponent({
       default: 0,
     },
   },
-  setup(props: Props) {
-    const root = ref();
+  setup() {
+    const root = ref<any>();
     onMounted(() => {
       // noisyLinesBackground({
       //   el: root.value
       // })
     });
-    return () => <div ref={root}>count in jsx component: {props.count}</div>;
+    return { root };
+    // return () => <div ref={root}>count in jsx component: {props.count}</div>;
+  },
+  render() {
+    const props = this;
+    return <div ref={this.root}>count in jsx component: {props.count}</div>;
   },
 }) as DefineComponent<Props>;

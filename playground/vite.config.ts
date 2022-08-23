@@ -7,6 +7,7 @@ import Pages from 'vite-plugin-pages';
 import vueJsx from '@vitejs/plugin-vue-jsx';
 import Unocss from 'unocss/vite';
 import WindiCSS from 'vite-plugin-windicss';
+import vitePluginString from 'vite-plugin-string'
 
 export default defineConfig({
   resolve: {
@@ -20,6 +21,7 @@ export default defineConfig({
     sourcemap: true,
   },
   plugins: [
+    vitePluginString(),
     Vue({
       // reactivityTransform: true,
     }),

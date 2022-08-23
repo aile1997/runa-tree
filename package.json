@@ -124,7 +124,9 @@
     }
   },
   "dependencies": {
-    "three": "^0.143.0"
+    "runafe-threejs": "^1.0.1",
+    "three": "^0.143.0",
+    "vite-plugin-string": "^1.1.2"
   },
   "config": {
     "commitizen": {
