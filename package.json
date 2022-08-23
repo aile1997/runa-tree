@@ -1,6 +1,6 @@
 {
   "name": "runafe-threejs",
-  "version": "0.0.3",
+  "version": "0.0.5",
   "description": "npm template for vue3s",
   "keywords": [
     "vue3"
@@ -45,7 +45,8 @@
     "stylelint": "stylelint **/*.{css,less,scss,vue}",
     "test": "vitest",
     "test:ui": "vitest --ui",
-    "typecheck": "tsc && vue-tsc"
+    "typecheck": "tsc && vue-tsc",
+    "commit": "cz"
   },
   "devDependencies": {
     "@babel/core": "^7.18.10",
@@ -78,10 +79,13 @@
     "autoprefixer": "^10.4.8",
     "babel-loader": "^8.2.5",
     "bumpp": "^8.2.1",
+    "commitizen": "^4.2.5",
     "concurrently": "^7.3.0",
     "core-js": "^3.24.1",
     "cssnano": "^5.1.12",
+    "cz-conventional-changelog": "^3.3.0",
     "esbuild-plugin-babel": "^0.2.3",
+    "esbuild-plugin-glsl": "^1.1.0",
     "eslint": "^8.21.0",
     "eslint-config-airbnb-base": "^15.0.0",
     "eslint-config-airbnb-typescript": "^17.0.0",
@@ -109,8 +113,7 @@
     "vite-plugin-dts": "^1.4.1",
     "vite-plugin-windicss": "^1.8.7",
     "vitest": "^0.20.3",
-    "vue-tsc": "^0.39.4",
-    "esbuild-plugin-glsl": "^1.1.0"
+    "vue-tsc": "^0.39.4"
   },
   "peerDependencies": {
     "vue": "^3.2.0"
@@ -122,5 +125,10 @@
   },
   "dependencies": {
     "three": "^0.143.0"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
   }
 }
