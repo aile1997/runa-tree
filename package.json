@@ -1,6 +1,6 @@
 {
   "name": "runafe-threejs",
-  "version": "0.0.2",
+  "version": "0.0.5",
   "description": "npm template for vue3s",
   "keywords": [
     "vue3"
@@ -121,7 +121,6 @@
     }
   },
   "dependencies": {
-    
     "three": "^0.143.0"
   }
 }
