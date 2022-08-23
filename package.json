@@ -5,13 +5,13 @@
   "keywords": [
     "vue3"
   ],
-  "homepage": "https://github.com/jerrywu001/vue3-npm-template#readme",
+  "homepage": "https://github.com/aile1997/runa-threejs#readme",
   "bugs": {
-    "url": "https://github.com/jerrywu001/vue3-npm-template/issues"
+    "url": "https://github.com/aile1997/runa-threejs/issues"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/jerrywu001/vue3-npm-template.git"
+    "url": "git+https://github.com/aile1997/runa-threejs.git"
   },
   "license": "MIT",
   "author": "jerrywu001 <57242263@163.com>",
