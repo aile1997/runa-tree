@@ -14,7 +14,7 @@
     "url": "git+https://github.com/aile1997/runa-threejs.git"
   },
   "license": "MIT",
-  "author": "jerrywu001 <57242263@163.com>",
+  "author": "aile1997ccc",
   "main": "./dist/index.js",
   "module": "./dist/esm/index.js",
   "types": "./dist/index.d.ts",
