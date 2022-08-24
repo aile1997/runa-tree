@@ -12,9 +12,9 @@ function changeCount() {
 
 <template>
   <div>
-    <div py2 px6>
+    <!-- <div py2 px6>
       <button class="mybtn" @click="changeCount">change count value</button>
-    </div>
+    </div> -->
 
     <!-- <Demo :count="count" /> -->
 
@@ -28,4 +28,12 @@ function changeCount() {
 .mybtn {
   @apply rounded-md border border-light-50 mr-5 p-2 bg-green-500 text-xs text-white;
 }
+
+.swarm {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+}
+
 </style>

@@ -124,7 +124,7 @@
     }
   },
   "dependencies": {
-    "runafe-threejs": "^1.0.1",
+    "runafe-threejs": "^1.0.2",
     "three": "^0.143.0",
     "vite-plugin-string": "^1.1.2"
   },

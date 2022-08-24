@@ -1,5 +1,5 @@
 import { DefineComponent, defineComponent, ref, onMounted } from 'vue';
-// import { noisyLinesBackground } from '../../../dist/esm/index'
+import { particlesCursor } from 'runafe-threejs';
 
 export interface Props {
   count?: number;
@@ -18,18 +18,13 @@ export const JsxDemo = defineComponent({
       default: 0,
     },
   },
-  setup() {
+  setup(props: Props) {
     const root = ref<any>();
     onMounted(() => {
-      // noisyLinesBackground({
-      //   el: root.value
-      // })
+      particlesCursor({
+        el: root.value,
+      });
     });
-    return { root };
-    // return () => <div ref={root}>count in jsx component: {props.count}</div>;
-  },
-  render() {
-    const props = this;
-    return <div ref={this.root}>count in jsx component: {props.count}</div>;
+    return () => <div ref={root} class = "swarm"></div>;
   },
 }) as DefineComponent<Props>;
